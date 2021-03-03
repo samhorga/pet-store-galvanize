@@ -2,6 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.4.3'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'org.asciidoctor.convert' version '1.5.8'
 }
 
 group = 'com.example'
@@ -32,4 +33,18 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+asciidoctor {
+    attributes 'snippets': file('build/generated-snippets')
+    sourceDir 'src/main/asciidoc'
+    dependsOn test
+}
+
+asciidoctor.doLast {
+    copy {
+        from 'build/asciidoc/html5'
+        into 'build/resources/main/static'
+        include 'index.html'
+    }
 }

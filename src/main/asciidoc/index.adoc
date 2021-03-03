@@ -1,0 +1,13 @@
+= Petstore API
+:toc:
+
+=== Get All Animals
+
+.request
+include::{snippets}/get-all-animals/http-request.adoc[]
+
+.response
+include::{snippets}/get-all-animals/http-response.adoc[]
+
+.response-fields
+include::{snippets}/get-all-animals/response-fields.adoc[]
