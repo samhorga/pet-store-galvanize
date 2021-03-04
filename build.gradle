@@ -19,6 +19,10 @@ repositories {
     mavenCentral()
 }
 
+ext {
+    set('snippetsDir', file("build/generated-snippets"))
+}
+
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
@@ -48,3 +52,5 @@ asciidoctor.doLast {
         include 'index.html'
     }
 }
+
+bootJar.dependsOn(asciidoctor)
