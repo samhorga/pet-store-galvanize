@@ -1,6 +1,6 @@
 package com.example.petstore.controllers;
 
-import com.example.petstore.model.AnimalEntity;
+import com.example.petstore.model.entities.AnimalEntity;
 import com.example.petstore.model.AnimalIds;
 import com.example.petstore.repository.AnimalRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -59,7 +59,7 @@ public class AnimalControllerTests {
 
     @Test
     public void whenRequestAnimalsFromShelternet_AnimalsShouldTransferINThePetStore() throws Exception {
-        AnimalIds animalIds = new AnimalIds(List.of(1L,2L));
+        AnimalIds animalIds = new AnimalIds(List.of(1L, 2L));
 
         mockMvc.perform(post("/animals/request")
                 .content(objectMapper.writeValueAsString(animalIds))

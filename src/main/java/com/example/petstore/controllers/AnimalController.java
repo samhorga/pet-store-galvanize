@@ -1,6 +1,6 @@
 package com.example.petstore.controllers;
 
-import com.example.petstore.model.AnimalEntity;
+import com.example.petstore.model.entities.AnimalEntity;
 import com.example.petstore.model.AnimalIds;
 import com.example.petstore.model.AnimalResponseFromShelternet;
 import com.example.petstore.services.AnimalService;

@@ -1,15 +1,13 @@
 package com.example.petstore.restdocs;
 
-import com.example.petstore.client.ShelternetClient;
 import com.example.petstore.controllers.AnimalController;
-import com.example.petstore.model.AnimalEntity;
+import com.example.petstore.model.entities.AnimalEntity;
 import com.example.petstore.model.AnimalIds;
 import com.example.petstore.model.AnimalResponseFromShelternet;
 import com.example.petstore.model.AnimalResponseFromShelternetDTO;
 import com.example.petstore.services.AnimalService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

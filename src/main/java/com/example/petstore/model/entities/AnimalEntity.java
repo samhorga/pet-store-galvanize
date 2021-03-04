@@ -1,4 +1,4 @@
-package com.example.petstore.model;
+package com.example.petstore.model.entities;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

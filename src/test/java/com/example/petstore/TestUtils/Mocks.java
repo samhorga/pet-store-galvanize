@@ -1,6 +1,7 @@
 package com.example.petstore.TestUtils;
 
-import com.example.petstore.model.AnimalEntity;
+import com.example.petstore.model.entities.AnimalEntity;
+import com.example.petstore.model.entities.ItemEntity;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -14,5 +15,9 @@ public class Mocks {
         animal.setId(2L);
 
         return List.of(animal, animal1);
+    }
+
+    public static ItemEntity getItem() {
+        return new ItemEntity("FOOD", "DOG", "LAYS", "CHIPS", "THIS IS CHIPS FOR DOG", 14.59);
     }
 }

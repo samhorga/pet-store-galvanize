@@ -2,7 +2,7 @@ package com.example.petstore.services;
 
 import com.example.petstore.TestUtils.Mocks;
 import com.example.petstore.client.ShelternetClient;
-import com.example.petstore.model.AnimalEntity;
+import com.example.petstore.model.entities.AnimalEntity;
 import com.example.petstore.model.AnimalIds;
 import com.example.petstore.model.AnimalResponseFromShelternet;
 import com.example.petstore.model.AnimalResponseFromShelternetDTO;
