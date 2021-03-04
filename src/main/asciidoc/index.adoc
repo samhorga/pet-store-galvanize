@@ -11,3 +11,14 @@ include::{snippets}/get-all-animals/http-response.adoc[]
 
 .response-fields
 include::{snippets}/get-all-animals/response-fields.adoc[]
+
+=== Request Animals From Shelternet
+
+.request
+include::{snippets}/request-animals-from-shelternet/http-request.adoc[]
+
+.response
+include::{snippets}/request-animals-from-shelternet/http-response.adoc[]
+
+.response-fields
+include::{snippets}/request-animals-from-shelternet/response-fields.adoc[]
